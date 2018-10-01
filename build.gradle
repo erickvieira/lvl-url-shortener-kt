@@ -1,0 +1,36 @@
+buildscript {
+    ext.kotlin_version = '1.2.21'
+    ext.node_dir = 'node'
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version" 
+    }
+}
+apply plugin: 'kotlin2js'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    def kotlinx_html_version = "0.6.8"
+    compile "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version"
+    implementation 'com.beust:klaxon:3.0.1'
+}
+
+sourceSets.main {
+    kotlin.srcDirs += 'src/kotlin'
+    resources.srcDirs += 'src/resources'
+}
+
+compileKotlin2Js.kotlinOptions {
+    outputFile = "${projectDir}/${node_dir}/index.js"
+    moduleKind = "commonjs" 
+    sourceMap = true
+}
+
+clean.doFirst() {
+    delete("${node_dir}")
+}
