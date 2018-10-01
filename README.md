@@ -1,5 +1,8 @@
-# lvl-url-shortner-kt
+# lvl-url-shortener-kt
 Um projeto teste de um encurtador de url para aprender mais sobre nodejs com kotlin
+
+# lvl-url-shortener
+[Projeto base](https://github.com/erickvieira/lvl-url-shortener) feito em nodejs e com integração com o firebase
 
 ## ATENÇÃO
 ### Após clonar o repositório, siga os passos a seguir
