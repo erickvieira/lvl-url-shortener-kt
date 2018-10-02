@@ -102,7 +102,7 @@
      while (d > 0);
     var result = replace(joinToString(chars), ', ', '');
     var tmp$_0;
-    return reversed(Kotlin.isCharSequence(tmp$_0 = result) ? tmp$_0 : throwCCE()).toString().toUpperCase();
+    return reversed(Kotlin.isCharSequence(tmp$_0 = result) ? tmp$_0 : throwCCE()).toString().toLowerCase();
   };
   HexadecimalConverter.$metadata$ = {
     kind: Kind_CLASS,
