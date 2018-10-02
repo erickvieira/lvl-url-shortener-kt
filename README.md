@@ -6,6 +6,8 @@ Um projeto teste de um encurtador de url para aprender mais sobre nodejs com kot
 
 ## ATENÇÃO
 ### Após clonar o repositório, siga os passos a seguir
+#### AVISO IMPORTANTE: 
+- COPIE O ```.gitignore``` E O ```package.json``` PARA OUTRA PASTA QUALQUER ANTES DE INICIAR O PROCESSO NA IDE OU NA LINHA DE COMANDO, POIS O BUILD DO GRADLE PODE APAGAR ESSES ARQUIVOS E, PORTANTO, O SERVIDOR NODE NÃO INICIARÁ. CASO ISSO ACONDEÇA, RETORNE-OS PARA SUA PASTA DE ORIGEM E RODE UM ```npm install``` ANTES DE TENTAR O BUILD DO GRADLE OUTRA VEZ. APÓS A CONCLUSÃO DO MESMO, RODE O BUILD DO GRADLE NOVAMENTE E ESTARÁ TUDO CERTO.
 1. **Rodando o projeto no IntelliJ:**
 - Para rodar o projeto, basta ter o gradle e o npm instalados na máquina.
   - Primeiro, abra o projeto no IntelliJ e importe normalmente como um projeto gradle convencional.
