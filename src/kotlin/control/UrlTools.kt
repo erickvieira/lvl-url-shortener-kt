@@ -15,7 +15,8 @@ class UrlTools {
 
     fun shortUrl(url: String): Json {
         val serialize = floor((_min.. _max).random())
-        val shortened = "$serialize"
+        val hex = HexadecimalConverter()
+        val shortened = hex.convertDecimal(serialize.toInt())
         if (shortenedCollection.size > 0) {
             if (shortenedCollection.find { it.shortId == shortened } != null) {
                 shortUrl(url)
@@ -27,7 +28,7 @@ class UrlTools {
             hasSecurity = url.substring(0, 5) == "https"
         )
 
-        return if (shortenedCollection.size <= _max) {
+        return if (shortenedCollection.size < _max) {
             shortenedCollection.add(sce)
             JSON.parse(JSON.stringify(sce))
         } else json(

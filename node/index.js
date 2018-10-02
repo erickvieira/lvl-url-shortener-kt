@@ -6,9 +6,14 @@
   var json = Kotlin.kotlin.js.json_pyyo18$;
   var println = Kotlin.kotlin.io.println_s8jyv4$;
   var Unit = Kotlin.kotlin.Unit;
-  var IntRange = Kotlin.kotlin.ranges.IntRange;
-  var equals = Kotlin.equals;
   var ArrayList_init = Kotlin.kotlin.collections.ArrayList_init_ww73n8$;
+  var toChar = Kotlin.toChar;
+  var toBoxedChar = Kotlin.toBoxedChar;
+  var joinToString = Kotlin.kotlin.collections.joinToString_fmv235$;
+  var replace = Kotlin.kotlin.text.replace_680rmw$;
+  var IntRange = Kotlin.kotlin.ranges.IntRange;
+  var numberToInt = Kotlin.numberToInt;
+  var equals = Kotlin.equals;
   function main$ObjectLiteral() {
     this.extended = true;
   }
@@ -75,6 +80,35 @@
     app.get('/', main$lambda_1(urlTools));
     var listen = app.listen(3000, main$lambda_2);
   }
+  function HexadecimalConverter() {
+  }
+  var reversed = Kotlin.kotlin.text.reversed_gw00vp$;
+  HexadecimalConverter.prototype.convertDecimal_za3lpa$ = function (decimalValue) {
+    var tmp$;
+    var d = decimalValue;
+    var chars = ArrayList_init();
+    var temp;
+    var hex = 16;
+    do {
+      temp = d % hex;
+      if (temp < 10) {
+        tmp$ = toChar(temp + 48 | 0);
+      }
+       else
+        tmp$ = toChar(temp + 55 | 0);
+      chars.add_11rb$(toBoxedChar(tmp$));
+      d = d / hex | 0;
+    }
+     while (d > 0);
+    var result = replace(joinToString(chars), ', ', '');
+    var tmp$_0;
+    return reversed(Kotlin.isCharSequence(tmp$_0 = result) ? tmp$_0 : throwCCE()).toString().toUpperCase();
+  };
+  HexadecimalConverter.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'HexadecimalConverter',
+    interfaces: []
+  };
   function UrlTools() {
     this.shortenedCollection_0 = ArrayList_init();
     this._min_0 = 1000000;
@@ -85,7 +119,8 @@
     var tmp$;
     var x = this.random_9tsm8a$(new IntRange(this._min_0, this._max_0));
     var serialize = Math_0.floor(x);
-    var shortened = serialize.toString();
+    var hex = new HexadecimalConverter();
+    var shortened = hex.convertDecimal_za3lpa$(numberToInt(serialize));
     if (this.shortenedCollection_0.size > 0) {
       var $receiver = this.shortenedCollection_0;
       var firstOrNull$result;
@@ -107,7 +142,7 @@
       }
     }
     var sce = new ShortenedURLElement(url, shortened, equals(url.substring(0, 5), 'https'));
-    if (this.shortenedCollection_0.size <= this._max_0) {
+    if (this.shortenedCollection_0.size < this._max_0) {
       this.shortenedCollection_0.add_11rb$(sce);
       tmp$ = JSON.parse(JSON.stringify(sce));
     }
@@ -209,6 +244,7 @@
   };
   _.main_kand9s$ = main;
   var package$control = _.control || (_.control = {});
+  package$control.HexadecimalConverter = HexadecimalConverter;
   package$control.UrlTools = UrlTools;
   var package$model = _.model || (_.model = {});
   package$model.ShortenedURLElement = ShortenedURLElement;
