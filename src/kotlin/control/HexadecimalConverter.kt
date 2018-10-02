@@ -17,7 +17,7 @@ class HexadecimalConverter {
         } while (d > 0)
 
         val result = chars.joinToString().replace(", ", "")
-        return result.reversed().toUpperCase()
+        return result.reversed().toLowerCase()
     }
 
 }

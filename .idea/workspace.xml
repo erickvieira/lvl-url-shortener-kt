@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05fcf60c-1f57-405f-85fd-cb654a0c68ca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kotlin/control/HexadecimalConverter.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/lvl-url-shortener-kt.jar" afterPath="$PROJECT_DIR$/build/libs/lvl-url-shortener-kt.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/index/control/control.kjsm" afterPath="$PROJECT_DIR$/node/index/control/control.kjsm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/index.js" afterPath="$PROJECT_DIR$/node/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/index.js.map" afterPath="$PROJECT_DIR$/node/index.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/index.meta.js" afterPath="$PROJECT_DIR$/node/index.meta.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kotlin/control/UrlTools.kt" afterPath="$PROJECT_DIR$/src/kotlin/control/UrlTools.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -68,8 +56,8 @@
       <file leaf-file-name="HexadecimalConverter.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kotlin/control/HexadecimalConverter.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="220">
+              <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -667,12 +655,12 @@
       <option name="presentableId" value="Default" />
       <updated>1538358376844</updated>
       <workItem from="1538358378942" duration="3773000" />
-      <workItem from="1538517070562" duration="2832000" />
+      <workItem from="1538517070562" duration="3260000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6605000" />
+    <option name="totallyTimeSpent" value="7033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
@@ -772,8 +760,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kotlin/control/HexadecimalConverter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="220">
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
           <folding />
         </state>
       </provider>
